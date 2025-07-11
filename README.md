@@ -94,7 +94,13 @@ If you’re compiling on Linux, install the following packages:
 sudo apt install libgl1-mesa-dev build-essential
 ```
 
-#### Build Instructions
+#### Build Instructions:
+1. Install QT latest version
+2. Install all libraries mentioned in the Serial-Studio/app/CMakeLists.txt file. You can use Qt Maintanence tool
+3. QtGraphs or some other libraries will throw error which can be resolved using  installation of library "libxkbcommon-dev libxkbcommon-x11-dev"
+4. You need to set the path to Qt local installation or Qt installation using the command "export CMAKE_PREFIX_PATH=/home/<yourUserName>/Qt/6.9.1/gcc_64"
+5. After this you can execute all the command mentioned below
+   
 
 Once Qt is installed, you can compile the project by opening `CMakeLists.txt` in your preferred IDE or using the terminal:
 
